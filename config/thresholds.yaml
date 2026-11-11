@@ -1,0 +1,15 @@
+# Offline limits are set below the measured improved run and above the
+# bad-retriever and no-guardrail runs in docs/eval-report.md.
+# Live limits are configured gates for a future OPENAI_API_KEY run.
+# This repository has no measured LLM-judge scores.
+offline:
+  non_llm_context_recall: 0.80
+  string_presence: 0.90
+  refusal_correctness: 0.90
+  retrieval_hit_rate: 0.80
+  mrr: 0.70
+live:
+  faithfulness: 0.70
+  answer_relevancy: 0.70
+  context_precision: 0.70
+  context_recall: 0.70
